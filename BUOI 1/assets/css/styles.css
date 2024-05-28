@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: url('../fonts/quicksan/Quicksand-Light.eot');
+    src: url('../fonts/quicksan/Quicksand-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/quicksan/Quicksand-Light.woff2') format('woff2'),
+        url('../fonts/quicksan/Quicksand-Light.woff') format('woff'),
+        url('../fonts/quicksan/Quicksand-Light.ttf') format('truetype'),
+        url('../fonts/quicksan/Quicksand-Light.svg#Quicksand-Light') format('svg');
+    /* font-weight: 300; */
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* Reset Browser */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Quicksand";
+}
+
+.header-top {
+    width: 100%;
+    height: 35px;
+
+    background-color: #006A31;
+}
+
+.header-top p{
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* Header Main */
+.header-main {
+    height: 90px;
+    width: 100%;
+    
+    background-color: pink;
+    display: flex;
+    align-items: center;
+}
+
+.wrap-main{
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    width: 160px;
+    object-fit: cover; /*Hien thi anh khong bi meo*/
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search input{
+    width: calc(350px - 40px);
+    height: 40px;
+    background-color: blanchedalmond;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search button{
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #E23F58;
+    color: white;
+    position: absolute;
+    right: 0;
+
+}
