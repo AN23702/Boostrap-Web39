@@ -8,6 +8,15 @@
     <!-- Import CSS Bootstrap -->
     <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
 
+    <!-- Import fontawesome -->
+    <link rel="stylesheet" href="./lib/fontawesome/css/fontawesome.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/brands.css">
+    <link rel="stylesheet" href="./lib/fontawesome/css/solid.css">
+
+    <!-- Import owlcarousel -->
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./lib/owlcarousel/assets/owl.theme.default.min.css">
+
     <!-- Import styles.css -->
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -37,11 +46,32 @@
 
                         <div class="search">
                             <input type="text" placeholder="Bạn cần tìm gì?">
-                            <button>x</button>
+                            <button>
+                                <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+                            </button>
                         </div>
-                        <div class="shipping"></div>
-                        <div class="icon-user"></div>
-                        <div class="regiters"></div>
+
+                        <div class="shipping">
+                            <img src="./assets/images/icon shipping.webp" alt="icon shipping">
+                            <div class="content-shipping">
+                                <h4>Giao hàng tận nơi</h4>
+                                <p>1900 6750</p>
+                            </div>
+                        </div>
+
+                        <div class="icon-user">
+                            <ul class="ic-usc">
+                                <li><i class="fa-solid fa-user"></i></li>
+                                <li><i class="fa-solid fa-basket-shopping"></i>
+                                    <span>0</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="regiters">
+                            <button>Đặt bàn online</button>
+                            <button>Đặt bàn</button>
+                        </div>
                     </div>
 
                 </div>
@@ -49,8 +79,63 @@
         </div>
     </div>
 
+    <!-- Header Bottom -->
+    <div class="header-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <ul class="menu-main">
+                        <li class="active">
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Sản phẩm</a>
+                        </li>
+                        <li>
+                            <a href="#">Tin tức</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#">Câu hỏi thường gặp</a>
+                        </li>
+                        <li>
+                            <a href="#">Hệ thống cửa hàng</a>
+                        </li>
+                        <li>
+                            <a href="#">Đặt bàn</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Banner -->
+    <div class="banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="./assets/images/banner.jfif" alt="banner-1">
+            </div>
+        </div>
+    </div>
+
+
+
+ 
     <!-- Import JS Bootstrap -->
     <script src="./lib/bootstrap/js/bootstrap.bundle.js"></script>
+
+    <!-- Import lib JQuery -->
+    <script src="./lib/jquery-3.7.1.min.js"></script>
+
+    <!-- Import JS owlcarousel -->
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Import main.js -->
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>
@@ -59,3 +144,5 @@
 + Mobile: col-12
 + Tablet: col-sm-12
 + Desktop: col-md-12 -->
+
+<!-- Tat ca thu vien dat tren css or js -->

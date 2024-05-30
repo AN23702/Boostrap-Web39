@@ -41,7 +41,7 @@
     height: 90px;
     width: 100%;
     
-    background-color: pink;
+    background-color: white;
     display: flex;
     align-items: center;
 }
@@ -63,6 +63,9 @@
     display: flex;
     align-items: center;
     position: relative;
+
+    /* width: 20%;
+    background-color: #006A31; */
 }
 
 .search input{
@@ -88,4 +91,161 @@
     position: absolute;
     right: 0;
 
+}
+
+.logo{
+    /* width: 20%;
+    background-color: yellow; */
+}
+
+.shipping{
+    /* width: 40%;
+    background-color: yellowgreen; */
+
+    display: flex;
+    align-items: center;
+}
+
+.shipping img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+}
+
+.shipping .content-shipping{
+    margin-left: 8px;
+}
+
+.shipping .content-shipping h4{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.shipping .content-shipping p{
+    font-size: 16px;
+    font-weight: bold;
+    color: #e31827;
+    margin-bottom: 0;
+}
+
+.shipping .content-shipping p:hover{ /*Hanh dong khi di chuyen chuot vao*/
+    color: #006a31;
+}
+
+.icon-user{
+    /* width: 20%;
+    background-color: palevioletred; */
+}
+
+.icon-user .ic-usc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    height: 70px;
+}
+
+.ic-usc li{
+    list-style: none;
+    margin-left: 15px;
+    height: 40px;
+    width: 40px;
+    background-color: #ddd;
+    border-radius: 100%;
+
+    display: flex;
+    align-items: center; /*can chinh theo chieu doc*/
+    justify-content: center;
+
+    position: relative;
+}
+
+.ic-usc li span{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+
+    width: 18px;
+    height: 18px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: white;
+    border-radius: 50%;
+}
+
+.ic-usc li:first-child{
+    margin-left: 0;
+}
+
+.ic-usc li i{
+    font-size: 25px;
+}
+
+.icon-user .ic-usc li i{
+    color: #006A31;
+}
+
+.regiters{
+    /* width: 20%;
+    background-color: gray; */
+
+    display: flex;
+    align-items: center;
+}
+
+.regiters button{
+    padding: 9.5px 15px;
+    background-color: red;
+    border-radius: 15px;
+    color: white;
+    border: none;
+    margin-left: 15px;
+}
+
+/* Header bottom */
+.header-bottom{
+    width: 100%;
+    background-color: #006a31;
+    height: 54px;
+}
+
+.header-bottom .menu-main{
+    display: flex;
+    height: 54px;
+    align-items: center;
+    padding-left: 0;
+    /* justify-content: space-between; */
+}
+
+.header-bottom .menu-main li{
+    list-style: none;
+    margin-right: 8px;
+}
+
+.header-bottom .menu-main li a{
+    text-decoration: none;
+    /* background-color: #E31837; */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+
+    transition: all .3s;
+}
+
+.header-bottom .menu-main li a:hover{
+    background-color: #e31827;
+}
+
+.header-bottom .menu-main .active a{
+    background-color: #e31827;
+}
+
+/* Banner */
+.banner img {
+    height: 550px;
+    object-fit: cover;
 }
