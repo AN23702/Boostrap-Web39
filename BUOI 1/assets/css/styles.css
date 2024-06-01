@@ -27,6 +27,10 @@
     background-color: #006A31;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .header-top p{
     text-align: center;
     line-height: 35px;
@@ -248,4 +252,158 @@
 .banner img {
     height: 550px;
     object-fit: cover;
+}
+
+/* Menu food */
+.menu-foods{
+    /* background-color: pink; */
+    width: 100%;
+    height: 500px;
+    padding: 50px 0;
+}
+
+.menu-foods .title-menu{
+    text-align: center;
+}
+
+.menu-foods .title-menu p{
+    font-size: 20px;
+    color: #e31837;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+
+.menu-foods .title-menu h2{
+    font-weight: 700;
+    font-size: 40px;
+    color: #006A31;
+}
+
+/* Order menu */
+.order-menu{
+    width: 100%;
+    height: 51px;
+    background-color: #006A31;
+    margin-top: 10px;
+    
+    border-radius: 4px;
+}
+
+.order-menu .list-menu-foods{
+    display: flex;
+    height: 51px;
+    align-items: center; /*Can chinh pham tu theo chieu doc*/
+    justify-content: center; /*can chinh theo chieu ngang*/
+}
+
+.order-menu .list-menu-foods li{
+    list-style: none;
+    margin-left: 8px;
+}
+
+.order-menu .list-menu-foods li a{
+    text-decoration: none;
+    color: black;
+    padding: 4px 12px;
+    border-radius: 6px;
+    background-color: white;
+}
+
+.order-menu .list-menu-foods li a:hover{
+    background-color: #e31827;
+    color: white;
+}
+
+.order-menu .list-menu-foods .active a{
+    background-color: #e31827;
+    color: white;
+}
+
+
+
+.title-product-order{
+    margin-top: 30px;
+    font-size: 26px;
+    color: #e31827;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.box-product-order{
+    width: 100%;
+    height: 300px;
+    background-color: violet;
+    border-radius: 6px;
+    margin-bottom: 30px;
+}
+
+.mobile-icon{
+    display: none;
+}
+
+.header-bottom-mobile .search{
+    display: none;
+}
+/*Responsive cua giao dien pc, may chieu, may in*/
+
+/* desktop */
+@media screen and (max-width: 1279px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+    .logo img{
+        width: 120px;
+    }
+
+    .search input{
+        width: calc(350px - 150px);
+    }
+}
+
+/* tablet */
+@media screen and (max-width: 991px) {
+    .search ,.shipping, .regiters ,.ic-usc li:first-child, .header-bottom {
+        display: none;
+    }
+
+    .mobile-icon{
+        display: block;
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+
+    .mobile-icon .ic-bars{
+        width: 40px;
+        height: 40px;
+        border-radius: 100%;
+        background-color: #ddd;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-icon i{
+        color: #006A31;
+    }
+
+    .header-bottom-mobile .search{
+        display: block;
+    }
+
+    .header-bottom-mobile .search input{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+/* mobile */
+@media screen and (max-width: 480px) {
+    
 }
