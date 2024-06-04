@@ -338,13 +338,20 @@ html {
     margin-bottom: 30px;
 }
 
-.mobile-icon{
+.mobile-icon {
     display: none;
 }
 
 .header-bottom-mobile .search{
     display: none;
 }
+
+.close-mobile {
+    display: none;
+}
+
+
+
 /*Responsive cua giao dien pc, may chieu, may in*/
 
 /* desktop */
@@ -364,7 +371,7 @@ html {
 
 /* tablet */
 @media screen and (max-width: 991px) {
-    .search ,.shipping, .regiters ,.ic-usc li:first-child, .header-bottom {
+    .search ,.shipping, .regiters ,.ic-usc li:first-child{
         display: none;
     }
 
@@ -397,6 +404,43 @@ html {
         width: 100%;
     }
 
+    .header-bottom {
+        width: 40%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 999999;
+        background-color: white;
+        border-left: 1px solid #ddd;
+    }
+
+    .header-bottom .menu-main{
+        display: block;
+        height: auto;
+        padding-top: 100px;
+    }
+
+    .header-bottom .menu-main li a{
+        color: black;
+        display: block;
+        width: 100%;
+    }
+
+    .header-bottom .menu-main .active a{
+        color: white;
+
+    }
+
+    .close-mobile{
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .close-mobile i{
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 768px) {
