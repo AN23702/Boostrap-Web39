@@ -412,6 +412,9 @@ html {
         z-index: 999999;
         background-color: white;
         border-left: 1px solid #ddd;
+
+        left: -100%;
+        transition: all .5s;
     }
 
     .header-bottom .menu-main{
@@ -441,6 +444,8 @@ html {
     .close-mobile i{
         font-size: 30px;
     }
+
+
 }
 
 @media screen and (max-width: 768px) {

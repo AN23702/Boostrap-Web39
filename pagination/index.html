@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project pagination</title>
+
+    <!-- Import style.css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pagination: page - <span id="curPage">1</span></h1>
+        <!-- This is not the correct way to show the fetching message, it is just for testing -->
+        <ul id="data">
+          Fetching Data...
+        </ul>
+  
+        <div class="pagination">
+          <div id="pagNums"></div>
+        </div>
+    </div>
+
+<!-- Import axios -->
+<script src="./lib/axios.min.js"></script>
+
+<!-- Import main.js -->
+<script src="./assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+#data {
+    font-size: 18px;
+  }
+
+  #pagNums,
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .pagination button {
+    padding: 10px 15px;
+  }
